@@ -1,0 +1,720 @@
+#color-rose,
+#text-color:hover {
+    color: #F4008C;
+}
+
+#text-color {
+    color: #0b083d;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    padding: 25px 80px;
+    position: relative;
+    /* background-color: ; */
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1e1b55;
+    font-weight: 600;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+
+@media(max-width:991px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        padding: 15px 0px;
+        width: 100%;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    .fit {
+        display: block !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+
+    .small-rount {
+        display: none !important;
+    }
+}
+
+.logo {
+    float: left;
+}
+
+#new-hover {
+    display: inline-block;
+    position: relative;
+}
+
+#new-hover {
+    color: #0b083d;
+}
+
+#new-hover:hover {
+    color: #F4008C;
+}
+
+#new-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F4008C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#new-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#rotate {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    height: 3rem;
+
+
+}
+
+#rotate:hover {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* CarouselSrc */
+
+.Carousel-img {
+    /* height: 600px; */
+    background-image: url(https://trasol.in/wp-content/uploads/2022/03/03.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.Carousel-img2 {
+    background-image: url(https://trasol.in/wp-content/uploads/2022/03/02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media(max-width:991px) {
+    .carousel-margin {
+        margin-top: 0rem !important;
+    }
+
+    .carousel-small-box {
+        display: flex;
+        margin-left: 50px !important;
+        margin-top: 1rem !important;
+        display: none;
+
+    }
+
+    .carousel-small-show {
+        margin-bottom: 6rem !important;
+        display: block !important;
+        height: 13rem !important;
+        width: 40%;
+        margin-left: 50px !important;
+        margin-top: 1rem !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+
+    .expo-22 {
+        margin-top: 0rem !important;
+    }
+
+    #small-img1 {
+        margin-top: 0rem !important;
+        margin-left: 0rem !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        position: unset !important;
+    }
+
+    #small-img2 {
+        margin-top: 0rem !important;
+        margin-left: -0rem !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        position: unset !important;
+    }
+
+    .nom-img {
+        display: none;
+    }
+
+    #show-nom {
+        display: block !important;
+    }
+
+    #show-nomz {
+        display: block !important;
+    }
+
+    .Crypto {
+        display: none;
+    }
+
+
+    .video {
+        margin-top: unset !important;
+        margin-left: unset !important;
+    }
+
+    .rotate-img1 {
+        display: none !important;
+    }
+
+    .hide-col {
+        display: none;
+    }
+
+    .show-col {
+        display: block !important;
+    }
+
+    .Speakers-bg {
+        display: none;
+    }
+
+    .Speakers-flexible {
+        display: block !important;
+    }
+
+    .hide-conference {
+        margin-top: 60rem;
+    }
+
+    .width-non {
+        width: unset !important;
+    }
+
+    .box-cc {
+        display: none !important;
+    }
+
+    .box-cc2 {
+        display: block !important;
+        height: fit-content !important;
+        /* display: flex !important; */
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+
+    .bg-img-cover1 {
+        height: 500px !important;
+        width: fit-content !important;
+    }
+
+    .Sponsors-aling {
+        display: none !important;
+    }
+
+    .Sponsors-show {
+        display: block !important;
+    }
+
+    .src-image {
+        display: block;
+        width: 10rem;
+        border: 1px solid #F4008C;
+        height: auto;
+    }
+
+    .container-img {
+        border: none !important;
+    }
+
+    .footer {
+        height: fit-content !important;
+    }
+
+    .big-footer {
+        display: none;
+    }
+
+    .small-footer {
+        display: block !important;
+    }
+
+    .ticket-txt {
+        margin-left: unset !important;
+    }
+
+    /* color: '#fff',width:'50rem',display:'flex',marginTop:'2rem',position:'absolute',marginLeft:'2.5rem' */
+}
+
+.Sponsors-show {
+    display: none;
+}
+
+.small-footer {
+    display: none;
+}
+
+.Sponsors-aling {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(max-width:600px) {
+    .Sponsors-show {
+        margin-left: -80px;
+    }
+}
+
+.box-cc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-cc2 {
+    display: none;
+}
+
+.show-col {
+    display: none;
+}
+
+.text-animation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.text-animation span {
+    display: inline-block
+}
+
+.text-animation {
+    animation-name: text-animation
+}
+
+@keyframes text-animation {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.carousel-small-box {
+    height: 6rem;
+    width: 70%;
+    margin-left: 15rem;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    margin-top: -3rem;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.carousel-small-show {
+    height: 6rem;
+    width: 70%;
+    margin-left: 15rem;
+    background-color: white;
+    position: relative;
+    display: none;
+    z-index: 10;
+    margin-top: -3rem;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+body {
+    background-color: #ffffff !important;
+}
+
+.expo-22 {
+    margin-top: 5rem;
+    /* font-family: sans-serif; */
+}
+
+#content-img {
+    background-image: url(https://moneyexpoindia.com/assets/images/icons/pattern-1.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+#small-img1 {
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: -2.5rem;
+    z-index: 5;
+}
+
+#small-img2 {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+}
+
+.nom-img {
+    background-image: url(https://moneyexpoindia.com/assets/images/icons/backimg.png);
+    background-repeat: no-repeat;
+    height: 10rem;
+    margin-left: 10rem;
+}
+
+#show-nom {
+    display: none;
+}
+
+#show-nomz {
+    display: none;
+}
+
+.Crypto {
+    margin-top: -7rem;
+    background-image: url(https://moneyexpoindia.com/assets/images/icons/pattern-2.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    width: 90%;
+    height: 700px;
+}
+
+#z {
+    z-index: 1 !important;
+}
+
+.video {
+    margin-left: 25rem;
+    margin-top: 6.5rem;
+    position: absolute;
+}
+
+.fit {
+    display: none;
+}
+
+.rotate {
+    margin-left: 17rem;
+    animation: rotation 20s infinite linear;
+    position: absolute;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.rotate-img1 {
+    margin-top: -50rem;
+    position: absolute;
+    margin-left: -47rem;
+}
+
+.small-rount {
+    margin-top: -33.5rem;
+    position: absolute;
+    margin-left: -33.5rem;
+}
+
+.Speakers-bg {
+    background-image: url(https://moneyexpoindia.com/assets/images/background/10.jpg);
+    height: 700px;
+    width: 100%;
+}
+
+.ball {
+    display: flex;
+    margin-left: 65rem;
+    margin-top: -7.5rem;
+}
+
+.bottom-top {
+    position: relative;
+    z-index: 1;
+}
+
+.bottom-top:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: #F4008C;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.bottom-top:hover::after {
+    transform: scaleY(1);
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.avatar {
+    height: 150;
+    width: 150;
+}
+
+.avatar:hover {
+    height: 160;
+    width: 160;
+}
+
+.Speakers-flexible {
+    display: none;
+}
+
+@media(max-width:1331px) {
+    .ball {
+        display: none !important;
+    }
+}
+
+.bg-img-cover {
+    background-image: url(https://moneyexpoindia.com/assets/images/background/sub__background-banner.jpg);
+    width: 100%;
+    height: 500px;
+}
+
+.bg-img-cover1 {
+    background-image: url(https://moneyexpoindia.com/assets/images/icons/cta-bg.png);
+    height: 500px;
+    width: 60%;
+    float: right;
+    color: #fff;
+}
+
+.bg-img-cover-align {
+    margin-top: 6rem;
+}
+
+.container-img {
+    position: relative;
+    width: 13%;
+    border: 1px solid #F4008C;
+}
+
+.src-image {
+    display: block;
+    width: 10rem;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F4008C;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.container-img:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.text-img {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* .hideOne{
+display: none;
+} */
+.footer {
+    background-image: url(https://moneyexpoindia.com/assets/images/background/3.jpg);
+    height: 500px;
+    width: 100%;
+    color: #fff;
+    padding: 8rem;
+
+}
+
+.normal-img:hover {
+    border: 5px solid #F4008C;
+}
+
+ul li {
+    text-decoration: none;
+}
+
+#icon {
+    color: #fff;
+}
+
+#icon:hover {
+    color: #F4008C;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-wrapper {
+    position: relative;
+    height: 3rem;
+    /* We need to change this value */
+}
+
+.sticky .sticky-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.price-box {
+    background-image: url(./image/pink--priceing__bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+
+/* .price-box:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./image/pink--priceing__bg.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    content: "";
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.price-box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+*/
+.price {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 15px 35px 0;
+    font-family: 'Exo', sans-serif;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.ticket-txt {
+    margin-left: 4rem;
+}
+
+#spin {
+    margin-top: 300px;
+}
